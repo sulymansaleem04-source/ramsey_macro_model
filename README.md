@@ -31,9 +31,11 @@ $$\dot{c}(t) = \frac{c(t)}{\theta} \left[ \alpha k(t)^{\alpha - 1} - (\rho + \de
 Setting $\dot{k} = 0$ and $\dot{c} = 0$:
 
 $$k^* = \left( \frac{\alpha}{\rho + \delta + \theta g} \right)^{\frac{1}{1 - \alpha}}$$
+
 $$c^* = (k^*)^\alpha - (n + g + \delta)k^*$$
 
 ### Jacobian Linearization
+
 Linearizing the non-linear dynamic system around $(k^*, c^*)$:
 
 $$J = \begin{bmatrix} \rho - n + (\theta - 1)g & -1 \\ \frac{c^* \alpha (\alpha - 1)(k^*)^{\alpha - 2}}{\theta} & 0 \end{bmatrix}$$
@@ -41,7 +43,6 @@ $$J = \begin{bmatrix} \rho - n + (\theta - 1)g & -1 \\ \frac{c^* \alpha (\alpha 
 Because capital share $\alpha < 1$, the determinant $\det(J) < 0$. This confirms **saddle-path stability**:
 * One negative eigenvalue ($\lambda_1 < 0$): Stable manifold.
 * One positive eigenvalue ($\lambda_2 > 0$): Unstable manifold.
-
 ---
 
 ## 3. Numerical Simulation Results
