@@ -32,7 +32,7 @@ Setting $\dot{k} = 0$ and $\dot{c} = 0$:
 
 $$k^* = \left( \frac{\alpha}{\rho + \delta + \theta g} \right)^{\frac{1}{1 - \alpha}}$$
 
-$$c^* = (k^*)^\alpha - (n + g + \delta)k^*$$
+$$c^* = (k^*)^{\alpha} - (n + g + \delta)k^*$$
 
 ### Jacobian Linearization
 
