@@ -30,15 +30,18 @@ $$\dot{c}(t) = \frac{c(t)}{\theta} \left[ \alpha k(t)^{\alpha - 1} - (\rho + \de
 
 Setting $\dot{k} = 0$ and $\dot{c} = 0$:
 
-$$k^* = \left( \frac{\alpha}{\rho + \delta + \theta g} \right)^{\frac{1}{1 - \alpha}}$$
+$$k^{\ast} = \left( \frac{\alpha}{\rho + \delta + \theta g} \right)^{\frac{1}{1 - \alpha}}$$
 
-$$c^* = (k^*)^{\alpha} - (n + g + \delta)k^*$$
+$$c^{\ast} = (k^{\ast})^{\alpha} - (n + g + \delta)k^{\ast}$$
 
 ### Jacobian Linearization
 
-Linearizing the non-linear dynamic system around $(k^*, c^*)$:
+Linearizing the non-linear dynamic system around $(k^{\ast}, c^{\ast})$:
 
-$$J = \begin{bmatrix} \rho - n + (\theta - 1)g & -1 \\ \frac{c^* \alpha (\alpha - 1)(k^*)^{\alpha - 2}}{\theta} & 0 \end{bmatrix}$$
+$$J = \begin{bmatrix}
+\rho - n + (\theta - 1)g & -1 \\
+\frac{c^{\ast} \alpha (\alpha - 1)(k^{\ast})^{\alpha - 2}}{\theta} & 0
+\end{bmatrix}$$
 
 Because capital share $\alpha < 1$, the determinant $\det(J) < 0$. This confirms **saddle-path stability**:
 * One negative eigenvalue ($\lambda_1 < 0$): Stable manifold.
